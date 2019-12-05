@@ -2,14 +2,18 @@ const conllu = require('conllu-stream')
 const fs = require('fs')
 const TEST_CONLLU = fs.readFileSync('test.conllu').toString()
 
-const Readable = require('stream').Readable
-const input = new Readable()
-input.push(TEST_CONLLU)
-input.push(null)
+function readableStreamOf(text) {  
+  const Readable = require('stream').Readable
+  const input = new Readable()
+  input.push(TEST_CONLLU)
+  input.push(null)
+
+  return input
+}
 
 let output = ''
 
-input
+readableStreamOf(TEST_CONLLU)
   .pipe(conllu())
   .on('data', function(sentence) {
     let tags = []
