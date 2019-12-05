@@ -2,74 +2,74 @@
 # newpar
 # sent_id = 1
 # text = Kokonaiset kirsikkatomaatit on viskattu salaattikupin reunalle pieneksi keoksi.
-1	Kokonaiset	Kokonaiset	PROPN	NNP	Number=Sing	0	root	_	_
-2	kirsikkatomaatit	kirsikkatomaatit	PROPN	NNP	Number=Sing	1	flat	_	_
-3	on	on	ADP	IN	_	4	case	_	_
-4	viskattu	viskattu	PROPN	NNP	Number=Sing	1	nmod	_	_
-5	salaattikupin	salaattikupin	PROPN	NNP	Number=Sing	1	flat	_	_
-6	reunalle	reunalle	PROPN	NNP	Number=Sing	1	list	_	SpacesAfter=\n
-7	pieneksi	pieneksi	PROPN	NNP	Number=Sing	1	list	_	_
-8	keoksi	keoksi	PROPN	NNP	Number=Sing	1	list	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	1	punct	_	_
+1	Kokonaiset	kokonainen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Plur	2	amod	_	_
+2	kirsikkatomaatit	kirsikka#tomaatti	NOUN	N	Case=Nom|Number=Plur	4	obj	_	_
+3	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	4	aux:pass	_	_
+4	viskattu	viskata	VERB	V	Case=Nom|Degree=Pos|Number=Sing|PartForm=Past|VerbForm=Part|Voice=Pass	0	root	_	_
+5	salaattikupin	salaatti#kuppi	NOUN	N	Case=Gen|Number=Sing	6	nmod:poss	_	_
+6	reunalle	reuna	NOUN	N	Case=All|Number=Sing	4	obl	_	SpacesAfter=\n
+7	pieneksi	pieni	ADJ	A	Case=Tra|Degree=Pos|Number=Sing	8	amod	_	_
+8	keoksi	keko	NOUN	N	Case=Tra|Number=Sing	4	xcomp:ds	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	4	punct	_	_
 
 # sent_id = 2
 # text = Nappaat yhden haarukalla suuhun ja se poksahtaa kivasti.
-1	Nappaat	Nappaat	PROPN	NNP	Number=Sing	0	root	_	_
-2	yhden	yhden	PROPN	NNP	Number=Sing	1	flat	_	_
-3	haarukalla	haarukalla	PROPN	NNP	Number=Sing	1	flat	_	_
-4	suuhun	suuhun	PROPN	NNP	Number=Sing	1	flat	_	_
-5	ja	ja	PROPN	NNP	Number=Sing	1	flat	_	_
-6	se	sor	X	IN	Abbr=Yes	7	cc	_	_
-7	poksahtaa	poksahtaa	PROPN	NNP	Number=Sing	8	compound	_	SpacesAfter=\n
-8	kivasti	kivasti	PROPN	NNP	Number=Sing	1	list	_	SpaceAfter=No
-9	.	.	PUNCT	.	_	1	punct	_	_
+1	Nappaat	napata	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	_
+2	yhden	yksi	NUM	Num	Case=Gen|Number=Sing|NumType=Card	1	obj	_	_
+3	haarukalla	haarukka	NOUN	N	Case=Ade|Number=Sing	1	obl	_	_
+4	suuhun	suu	NOUN	N	Case=Ill|Number=Sing	1	obl	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	se	se	PRON	Pron	Case=Nom|Number=Sing|PronType=Dem	7	nsubj	_	_
+7	poksahtaa	poksahtaa	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	1	conj	_	SpacesAfter=\n
+8	kivasti	kivasti	ADV	Adv	Derivation=Sti	7	advmod	_	SpaceAfter=No
+9	.	.	PUNCT	Punct	_	1	punct	_	_
 
 # sent_id = 3
 # text = Maku on hieman liian hapokas ja vetinen, mutta menettelee.
-1	Maku	Maku	PROPN	NNP	Number=Sing	0	root	_	_
-2	on	on	ADP	IN	_	3	case	_	_
-3	hieman	hieman	PROPN	NNP	Number=Sing	1	nmod	_	_
-4	liian	liian	PROPN	NNP	Number=Sing	3	flat	_	_
-5	hapokas	hapokas	PROPN	NNP	Number=Sing	1	flat	_	_
-6	ja	ja	PROPN	NNP	Number=Sing	3	flat	_	_
-7	vetinen	vetinen	PROPN	NNP	Number=Sing	6	flat	_	SpaceAfter=No
-8	,	,	PUNCT	,	_	1	punct	_	_
-9	mutta	mutta	PROPN	NNP	Number=Sing	5	appos	_	_
-10	menettelee	menettelee	PROPN	NNP	Number=Sing	9	flat	_	SpaceAfter=No
-11	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n\n
+1	Maku	maku	NOUN	N	Case=Nom|Derivation=U|Number=Sing	5	nsubj:cop	_	_
+2	on	olla	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	cop	_	_
+3	hieman	hieman	ADV	Adv	_	4	advmod	_	_
+4	liian	liian	ADV	Adv	_	5	advmod	_	_
+5	hapokas	hapokas	ADJ	A	Case=Nom|Degree=Pos|Number=Sing	0	root	_	_
+6	ja	ja	CCONJ	C	_	7	cc	_	_
+7	vetinen	vetinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	5	conj	_	SpaceAfter=No
+8	,	,	PUNCT	Punct	_	10	punct	_	_
+9	mutta	mutta	CCONJ	C	_	10	cc	_	_
+10	menettelee	menetellä	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin|Voice=Act	5	conj	_	SpaceAfter=No
+11	.	.	PUNCT	Punct	_	5	punct	_	SpacesAfter=\n\n
 
 # newpar
 # sent_id = 4
 # text = Salaatin syötyäsi olet kylläinen ja pääset jatkamaan kiireistä työpäivääsi.
-1	Salaatin	Salaatin	PROPN	NNP	Number=Sing	0	root	_	_
-2	syötyäsi	syötyäsi	PROPN	NNP	Number=Sing	1	flat	_	_
-3	olet	olet	X	FW	Foreign=Yes	1	goeswith	_	_
-4	kylläinen	kyllaninen	X	FW	Foreign=Yes	1	goeswith	_	_
-5	ja	ja	X	FW	Foreign=Yes	1	goeswith	_	_
-6	pääset	päafset	X	FW	Foreign=Yes	1	goeswith	_	_
-7	jatkamaan	jatkamaan	X	FW	Foreign=Yes	1	goeswith	_	_
-8	kiireistä	kiireistä	X	FW	Foreign=Yes	1	goeswith	_	SpacesAfter=\n
-9	työpäivääsi	työpäivavaysi	X	ADD	_	1	list	_	SpaceAfter=No
-10	.	.	PUNCT	.	_	1	punct	_	_
+1	Salaatin	salaatti	NOUN	N	Case=Gen|Number=Sing	2	nmod:poss	_	_
+2	syötyäsi	syötyä	ADP	N	Case=Nom|Number=Sing|Number[psor]=Sing|Person[psor]=2	4	nsubj:cop	_	_
+3	olet	olla	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	4	cop	_	_
+4	kylläinen	kylläinen	ADJ	A	Case=Nom|Degree=Pos|Derivation=Inen|Number=Sing	0	root	_	_
+5	ja	ja	CCONJ	C	_	7	cc	_	_
+6	pääset	pääs	VERB	N	Case=Nom|Number=Plur	7	nsubj	_	_
+7	jatkamaan	jatkaa	VERB	V	Case=Ill|InfForm=3|Number=Sing|VerbForm=Inf|Voice=Act	4	conj	_	_
+8	kiireistä	kiira	ADJ	A	Case=Par|Degree=Pos|Number=Plur|Typo=Yes	9	amod	_	SpacesAfter=\n
+9	työpäivääsi	työpa#̈iva#̈äsi	NOUN	N	Case=Nom|Number=Sing	7	obj	_	SpaceAfter=No
+10	.	.	PUNCT	Punct	_	4	punct	_	_
 
 # sent_id = 5
 # text = Ohi mennen mietit, että varmasti voisi parempiakin salaatteja tehdä, mutta et ole myöskään tyytymätön.
-1	Ohi	Ohi	PROPN	NNP	Number=Sing	0	root	_	_
-2	mennen	mennen	PROPN	NNP	Number=Sing	1	flat	_	_
-3	mietit	mietit	PROPN	NNP	Number=Sing	1	flat	_	SpaceAfter=No
-4	,	,	PUNCT	,	_	1	punct	_	_
-5	että	että	PROPN	NNP	Number=Sing	1	flat	_	_
-6	varmasti	varmasti	PROPN	NNP	Number=Sing	1	flat	_	_
-7	voisi	voisi	PROPN	NNP	Number=Sing	1	flat	_	_
-8	parempiakin	parempiakin	PROPN	NNP	Number=Sing	1	flat	_	SpacesAfter=\n
-9	salaatteja	salaatteja	PROPN	NNP	Number=Sing	1	flat	_	_
-10	tehdä	tehdä	PROPN	NNP	Number=Sing	12	flat	_	SpaceAfter=No
-11	,	,	PUNCT	,	_	12	punct	_	_
-12	mutta	mutta	PROPN	NNP	Number=Sing	1	conj	_	_
-13	et	et	X	FW	_	12	flat	_	_
-14	ole	ole	PROPN	NNP	Number=Sing	12	flat	_	_
-15	myöskään	myodskaaadn	ADJ	JJ	Degree=Pos	14	compound	_	_
-16	tyytymätön	tyytymaltön	ADJ	JJ	Degree=Pos	1	list	_	SpaceAfter=No
-17	.	.	PUNCT	.	_	1	punct	_	SpacesAfter=\n
+1	Ohi	ohi	ADV	Adv	_	3	advmod	_	_
+2	mennen	mennen	ADV	Adv	_	3	advmod	_	_
+3	mietit	miettiä	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin|Voice=Act	0	root	_	SpaceAfter=No
+4	,	,	PUNCT	Punct	_	5	punct	_	_
+5	että	että#ei	VERB	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	3	conj	_	_
+6	varmasti	varmasti	ADV	Adv	Derivation=Sti	5	advmod	_	_
+7	voisi	voida	AUX	V	Mood=Cnd|Number=Sing|Person=3|VerbForm=Fin|Voice=Act	5	aux	_	_
+8	parempiakin	hyvä	ADJ	A	Case=Par|Degree=Cmp|Number=Plur	9	amod	_	SpacesAfter=\n
+9	salaatteja	salaatti	NOUN	N	Case=Par|Number=Plur	5	nsubj:cop	_	_
+10	tehdä	tehdä	NOUN	Symb	_	9	nmod	_	SpaceAfter=No
+11	,	,	PUNCT	Punct	_	16	punct	_	_
+12	mutta	mutta	CCONJ	C	_	16	cc	_	_
+13	et	ei	AUX	V	Number=Sing|Person=2|Polarity=Neg|VerbForm=Fin|Voice=Act	16	aux	_	_
+14	ole	olla	AUX	V	Connegative=Yes|Mood=Ind|Tense=Pres|VerbForm=Fin	16	cop	_	_
+15	myöskään	myöskään	ADJ	A	Case=Nom|Degree=Pos|Derivation=Ton|Number=Sing	16	amod	_	_
+16	tyytymätön	tyytyma	NOUN	N	Case=Nom|Clitic=Kaan|Number=Sing	3	conj	_	SpaceAfter=No
+17	.	.	PUNCT	Punct	_	3	punct	_	SpacesAfter=\n
 
 
