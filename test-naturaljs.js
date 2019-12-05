@@ -1,6 +1,7 @@
 const natural = require('natural')
 const tokenizer = new natural.OrthographyTokenizer({ language: 'fi' })
+const fs = require('fs')
+const TEST_TEXT = fs.readFileSync('test.txt').toString()
 
-const text = 'Kokonaiset kirsikkatomaatit on viskattu salaattikupin reunalle pieneksi keoksi.'
-const result = tokenizer.tokenize(text)
+const result = tokenizer.tokenize(TEST_TEXT)
 console.log(result)

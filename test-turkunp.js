@@ -1,4 +1,6 @@
 const axios = require('axios')
+const fs = require('fs')
+const TEST_TEXT = fs.readFileSync('test.txt').toString()
 
 async function parsePlaintextTurkunp(text) {
   const response =
@@ -15,7 +17,6 @@ async function parsePlaintextTurkunp(text) {
 }
 
 (async function() {
-  const text = 'Kokonaiset kirsikkatomaatit on viskattu salaattikupin reunalle pieneksi keoksi.'
-  const output = await parsePlaintextTurkunp(text)
+  const output = await parsePlaintextTurkunp(TEST_TEXT)
   console.log(output)
 })()
