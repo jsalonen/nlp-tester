@@ -1,0 +1,8 @@
+version: "2.4"
+
+services:
+  turkunp:
+    image: turkunlp/turku-neural-parser:latest-fi-en-sv-cpu
+    ports:
+      - "7689:7689"
+    command: server en_ewt parse_plaintext
