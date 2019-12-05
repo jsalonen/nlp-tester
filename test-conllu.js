@@ -1,9 +1,9 @@
 const conllu = require('conllu-stream')
 const fs = require('fs')
 const TEST_CONLLU = fs.readFileSync('test.conllu').toString()
+const { Readable } = require('stream')
 
 function readableStreamOf(text) {  
-  const Readable = require('stream').Readable
   const input = new Readable()
   input.push(TEST_CONLLU)
   input.push(null)
