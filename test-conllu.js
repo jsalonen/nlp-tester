@@ -18,7 +18,7 @@ readableStreamOf(TEST_CONLLU)
   .on('data', function(sentence) {
     let tags = []
 
-    Object.entries(sentence.tokens).forEach(([id, token]) => {
+    Object.entries(sentence.tokens).forEach(([_id, token]) => {
       if(token.upostag !== 'PUNCT' && token.upostag !== 'NUM' && token.upostag !== 'SYM') {
         tags.push(token.form)
       }
