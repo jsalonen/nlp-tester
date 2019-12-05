@@ -11,21 +11,34 @@ function readableStreamOf(text) {
   return input
 }
 
-let output = ''
+async function generateSentenceKeywords(stream) {
+  return new Promise((resolve, reject) => {
+    let output = ''
 
-readableStreamOf(TEST_CONLLU)
-  .pipe(conllu())
-  .on('data', function(sentence) {
-    let tags = []
-
-    Object.entries(sentence.tokens).forEach(([_id, token]) => {
-      if(token.upostag !== 'PUNCT' && token.upostag !== 'NUM' && token.upostag !== 'SYM') {
-        tags.push(token.form)
-      }
-    })
-
-    output += tags.join(' ') + '\n'
+    stream
+      .pipe(conllu())
+      .on('data', function(sentence) {
+        let tags = []
+    
+        Object.entries(sentence.tokens).forEach(([_id, token]) => {
+          if(token.upostag !== 'PUNCT' && token.upostag !== 'NUM' && token.upostag !== 'SYM') {
+            tags.push(token.form)
+          }
+        })
+    
+        output += tags.join(' ') + '\n'
+      })
+      .on('error', function (error) {
+        reject(error)
+      })
+      .on('end', function () {
+        resolve(output)
+      })    
   })
-  .on('end', function () {
-    console.log(output)
-  })
+} 
+
+(async function() {
+  console.log(
+    await generateSentenceKeywords(readableStreamOf(TEST_CONLLU))
+  )
+})()
